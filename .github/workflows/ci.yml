@@ -23,5 +23,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r day5/requirements.txt
 
+      - name: Check CSV exists
+        run: |
+          ls -R day5/homework_day5/data || true
+          echo "---"
+          git status --short
+
       - name: Run pytest
         run: pytest -q day5/homework_day5/tests
