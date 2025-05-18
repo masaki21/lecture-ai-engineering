@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score
 # === パス設定 ===
 # ファイルの深さが  lecture-ai-engineering/day5/homework_day5/tests/test_model.py
 # なので、リポジトリルートは parents[4]
-ROOT = Path(__file__).resolve().parents[5]
+ROOT = Path(__file__).resolve().parents[3]
 
 MODEL_CUR  = ROOT / "day5/演習1/models/titanic_model.pkl"
 MODEL_PREV = ROOT / "day5/演習1/models/titanic_model_prev.pkl"
