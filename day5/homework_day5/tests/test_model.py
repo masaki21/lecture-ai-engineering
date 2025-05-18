@@ -22,6 +22,9 @@ MAX_LATENCY_SEC = 0.002  # 1 サンプルあたり
 
 def _load_xy():
     df = pd.read_csv(TEST_CSV)[["Pclass", "Sex", "Age", "Fare", "Survived"]].dropna()
+
+    df["Sex"] = (df["Sex"] == "male").astype(int)   # male=1, female=0
+    
     X = df.drop("Survived", axis=1)
     y = df["Survived"]
     return X, y
