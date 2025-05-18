@@ -25,9 +25,8 @@ jobs:
 
       - name: Check CSV exists
         run: |
-          ls -R day5/homework_day5/data || true
-          echo "---"
-          git status --short
+          ls -lb day5/homework_day5/data || true       
+    　　　find day5/homework_day5/data -printf '%P|\n' || true
 
       - name: Run pytest
         run: pytest -q day5/homework_day5/tests
