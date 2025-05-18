@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[4]
 
 MODEL_CUR  = ROOT / "day5/演習1/models/titanic_model.pkl"
 MODEL_PREV = ROOT / "day5/演習1/models/titanic_model_prev.pkl"
-TEST_CSV   = ROOT / "day5/data/Titanic.csv"
+TEST_CSV   = ROOT / "day5/homework_day5/data/Titanic.csv"
 
 ACC_THRESHOLD   = 0.78
 MAX_LATENCY_SEC = 0.002  # 1 サンプルあたり
